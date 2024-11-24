@@ -1,0 +1,578 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffffff;          /*Color de la barra de navegacion*/
+  padding: 20px 10%;
+  display: flex;
+  justify-content: right;
+  box-shadow: 0 2px 5px rgb(77, 0, 70);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;      /*Espacio entre cada boton*/
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*-----------------------
+------Interfaz-----------
+------------------------*/
+.PetDoctorSection {
+  background-color: #ffffff;    /*color de fondo de la pagina*/
+  padding: 3rem 2rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+.contenido-principal {
+  display: flex; 
+  background-color: #a487ae76;        /*Color del contenedor*/
+  /*color: #ffffff;                     /**/
+  align-items: center;
+  justify-content: left;
+  max-width: 1200px;
+  width: 100%;
+  
+}
+
+/*-----------------------
+------texto titulos-----------
+------------------------*/
+.texto {
+  max-width: 50%;
+  font-weight: 900;       /*Negruta del texto*/
+}
+
+.Titulo_pet {
+  font-size: 75px;
+  color: #333;
+}
+
+.Titulo_doctor {
+  font-size: 80px;
+  color: #333;
+}
+
+.Titulo_GET {
+  text-align: center;
+  padding: 60px;
+}
+
+/*-----------------------
+------Parrafos-----------
+------------------------*/
+
+.Parrafo1 {
+  font-size: 20px;
+  color: #616161;
+  margin: 10px 0;
+}
+
+.Parrafo2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 10px 0;
+  color: #616161;
+}
+
+/*-----------------------
+------Botones-----------
+------------------------*/
+
+.contenedor_boton {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.BotonStar {
+  font-size: 16px;
+  color: #fff;            /*color letra boton*/
+  background-color: #a239c8;  /*color boton*/
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+}
+
+.BotonStar:hover {  /*cambiar color del boton cuando se le pasa el mouse por encima*/
+  background-color: #9000ff;
+}
+
+/*-----------------------
+---------Imagenes--------
+------------------------*/
+.imagenes {
+  display: flex;
+  /*position: relative;*/
+}
+
+.perro1 {
+  height: 400px;
+  width: auto;
+
+}
+
+.Huellaperro {
+  position: absolute;
+  height: 265px;        /*Tamaño */
+  width: 290px;
+  z-index: -1;
+}
+
+
+/*-----------------------
+-------Apartado 2--------
+------------------------*/
+
+
+/* Seccion General  */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-header {
+  margin-bottom: 40px;
+}
+
+.intro-subtitle {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.intro-title {
+  font-size: 36px;
+  color: #333;
+  margin: 0;
+}
+
+/*-----------------------
+------- CARDS------------
+------------------------*/
+
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Estilo de Cards */
+.card {
+  background: #4d484859;      /*Color interno de las cartas*/
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(143, 85, 196);    /*Sombras de las cartas*/
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 22px;        /*Tamaño del texto*/
+  color: #000000;       /*color titulo de las cartas*/
+  margin-bottom: 30px;    /*Espacio inferioir entre el titulo y el texto*/
+  }
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background: #c48fd0;        /*color interno del boton*/
+  color: #000000;             /*Color letra del boton*/
+  border: 2px solid #000000;    /*color alrededor del boton trazo*/
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background: #f7f7f7;      /*el colo el cual cambia al pasar el cursor por encima*/
+  border-color: #000000;    /*Cambia el color del trazo al pasar el cursos por encia*/
+}
+
+
+/*-----------------------
+-------Apartado 3--------  (Personas con mascotas)
+------------------------*/
+
+
+/* Estilos seccion principal */
+.apartado_about-us {
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.about-header {
+  margin-bottom: 40px;
+}
+
+.about-subtitle {
+  font-size: 28px;       /*Tamaño letra About Us*/
+  color: #000000;     /*COLOR TEXTO What we can do for you*/
+}
+
+.about-title {
+  font-size: 32px;
+  color: #000000;   /*Color texto About Us*/
+  margin: 10px 0;
+}
+
+/* Diseño */
+.about-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  text-align: left;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  padding: 0 20px;
+}
+
+.about-item-title {
+  font-size: 24px;      /*Tamaño texto Let us help you with your pet health*/
+  color: #000000;     /*Color texto Let us help you with your pet health*/
+  margin-bottom: 10px;
+}
+
+.about-item-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/*-----------------------
+-------Apartado 4-------- (featured-products)
+------------------------*/
+
+.featured-products {
+    background-color: #d184089e;      /*Color fondo del contenedor*/
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-products h2 {
+    color: #000000;       /*Color letras titulo Featured pet products*/
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: #333;
+}
+
+/*-----------------------
+-------5TO APARTADO------ (What we can do for you)
+------------------------*/
+
+.seccion-servicios {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9ff;    /*Color de fondo apartado What we can do for you */
+}
+
+.seccion-servicios h2 {
+  font-size: 35px;
+  color: #000000;     /*Color titulo services*/
+  margin-bottom: 40px;
+}
+
+.servicios-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;    /*Espacio horizontal entre cada imagen*/
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 150px;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  background-color: #4c7e976d;
+  padding: 15px;      /*Define el tamaño interno del los logos*/
+  box-shadow: 0 4px 6px rgb(0, 0, 0);   /*Color, y forma del Sombreado*/
+}
+
+.service-item h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/*-----------------------
+-------6TO APARTADO------
+------------------------*/
+
+/* Sección de testimonios */
+.testimonios_section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e7d9f7; /* Color lila suave */
+}
+
+.testimonios_section h2 {
+    font-size: 24px;        /*Tamaño subtitulo Testimonials*/
+    color: #6e57e0;       /* Color púrpura titulo de What people say about us*/
+    margin-bottom: 10px;
+}
+
+.testimonios_section h3 {
+    font-size: 32px;       /*Tamaño subtitulo What people say about us*/
+    color: #000000;     /*Color subtitulo What people say about us*/
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial h4 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 14px;
+    color: #6e6e6e;
+    margin-bottom: 15px;
+}
+
+.personas_msj {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/*-----------------------
+-------7MO APARTADO------
+------------------------*/
+
+footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.instagram-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.instagram-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.follow-button {
+    background-color: #9d00ff;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;     /*Color interno del texto FOLLOW*/
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.instagram-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.instagram-images img {
+    width: 200px;         /*Ancho del tamaño de la imagen*/
+    height: 200px;        /*Alto del tamaño de la imagen*/
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.column p {
+    color: #555;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+form button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.redes_sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.redes_sociales a:hover {
+    text-decoration: underline;
+}
+
