@@ -25,9 +25,9 @@ nav ul {
   gap: 60px;      /*Espacio entre cada boton*/
 }
 
-nav ul li a {
+nav ul li a {             /*Lista Barra de navegacion S*/
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-weight: bold;
   font-size: 16px;
 }
@@ -36,7 +36,7 @@ nav ul li a {
 ------Interfaz-----------
 ------------------------*/
 .PetDoctorSection {
-  background-color: #ffffff;    /*color de fondo de la pagina*/
+  background-color: #a487ae76;    /*color de fondo de la pagina*/
   padding: 3rem 2rem; 
   display: flex;
   justify-content: center;
@@ -51,8 +51,9 @@ nav ul li a {
   /*color: #ffffff;                     /**/
   align-items: center;
   justify-content: left;
-  max-width: 1200px;
-  width: 100%;
+  width: max-content;
+  padding: 1rem;
+
   
 }
 
@@ -61,22 +62,23 @@ nav ul li a {
 ------------------------*/
 .texto {
   max-width: 50%;
-  font-weight: 900;       /*Negruta del texto*/
+  font-weight: 900;       /*Negrita del texto*/
 }
 
 .Titulo_pet {
   font-size: 75px;
-  color: #333;
+  color: #000000;     /*Color de la letra del titulo*/
 }
 
 .Titulo_doctor {
   font-size: 80px;
-  color: #333;
+  color: #000000;   
 }
 
 .Titulo_GET {
   text-align: center;
   padding: 60px;
+  
 }
 
 /*-----------------------
@@ -107,7 +109,7 @@ nav ul li a {
 
 .BotonStar {
   font-size: 16px;
-  color: #fff;            /*color letra boton*/
+  color: #ffffff;            /*color letra boton*/
   background-color: #a239c8;  /*color boton*/
   border: none;
   padding: 15px 30px;
@@ -130,12 +132,13 @@ nav ul li a {
 }
 
 .perro1 {
+  display: flex;
   height: 400px;
   width: auto;
-
 }
 
 .Huellaperro {
+  display: flex;
   position: absolute;
   height: 265px;        /*Tamaño */
   width: 290px;
@@ -165,9 +168,9 @@ nav ul li a {
   margin-bottom: 5px;
 }
 
-.intro-title {
+.intro-title {          /*Titulo Get To know us*/
   font-size: 36px;
-  color: #333;
+  color: #000000;
   margin: 0;
 }
 
@@ -186,9 +189,9 @@ nav ul li a {
 
 /* Estilo de Cards */
 .card {
-  background: #4d484859;      /*Color interno de las cartas*/
+  background: #4d484b1c;      /*Color interno de las cartas*/
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgb(143, 85, 196);    /*Sombras de las cartas*/
+  box-shadow: 0 4px 8px rgb(0, 0, 0);    /*Sombras de las cartas*/
   padding: 20px;
   max-width: 300px;
   text-align: center;
@@ -211,22 +214,22 @@ nav ul li a {
   }
 
 .card-text {
-  font-size: 16px;
-  color: #666;
+  font-size: 16px;        /*tamaño del texto de las cards*/
+  color: #000000;       /*color de la letra de las cartas*/
   margin-bottom: 20px;
 }
 
 .card-button {
-  background: #c48fd0;        /*color interno del boton*/
-  color: #000000;             /*Color letra del boton*/
-  border: 2px solid #000000;    /*color alrededor del boton trazo*/
+  background: #ffffff;        /*color interno del boton*/
+  color: #0011ff;             /*Color letra del boton*/
+  border: 3px solid #0011ff;    /*color alrededor del boton trazo*/
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
 }
 
 .card-button:hover {
-  background: #f7f7f7;      /*el colo el cual cambia al pasar el cursor por encima*/
+  background: #f7f7f7;      /*el color el cual cambia al pasar el cursor por encima*/
   border-color: #000000;    /*Cambia el color del trazo al pasar el cursos por encia*/
 }
 
@@ -253,29 +256,31 @@ nav ul li a {
 }
 
 .about-title {
-  font-size: 32px;
+  font-size: 42px;    /*Tamaño letra What we can do for you*/
   color: #000000;   /*Color texto About Us*/
   margin: 10px 0;
 }
 
-/* Diseño */
+/*---------Diseño----------*/
 .about-contenido {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  /*gap: 300px;*/
   align-items: center;
+  justify-content:space-evenly;
 }
 
 .about-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
+  max-width: 660px;   /*Tamaño de las imagenes*/
   text-align: left;
 }
 
 .about-image {
+  display: flex;
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -287,14 +292,14 @@ nav ul li a {
 }
 
 .about-item-title {
-  font-size: 24px;      /*Tamaño texto Let us help you with your pet health*/
+  font-size: 34px;      /*Tamaño texto Let us help you with your pet health*/
   color: #000000;     /*Color texto Let us help you with your pet health*/
   margin-bottom: 10px;
 }
 
 .about-item-description {
-  font-size: 16px;
-  color: #666;
+  font-size: 18px;      /*Tamaño letra del texto de las cards*/
+  color: #000000;
 }
 
 /*-----------------------
@@ -302,9 +307,10 @@ nav ul li a {
 ------------------------*/
 
 .featured-products {
-    background-color: #d184089e;      /*Color fondo del contenedor*/
+    background-color: #d1c1a6a4;      /*Color fondo del contenedor*/
     padding: 50px 20px;
     text-align: center;
+    font-size: 25px;                    /*Tamaño del titulo, y de los precios*/
 }
 
 .featured-products .container {
@@ -343,21 +349,21 @@ nav ul li a {
 }
 
 .product-card h3 {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 20px;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .product-card p {
     font-size: 0.9rem;
-    color: #666;
+    color: #443e3e;
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
 .product-card span {
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 /*-----------------------
@@ -392,11 +398,12 @@ nav ul li a {
 }
 
 .service-item img {
-  width: 80px;
-  height: 80px;
-  background-color: #4c7e976d;
-  padding: 15px;      /*Define el tamaño interno del los logos*/
+  width: 100px;
+  height: 100px;
+  background-color: #00aaff4a;
+  padding: 18px;      /*Define el tamaño interno del los logos*/
   box-shadow: 0 4px 6px rgb(0, 0, 0);   /*Color, y forma del Sombreado*/
+  border-radius: 80px;
 }
 
 .service-item h3 {
@@ -406,7 +413,7 @@ nav ul li a {
 
 .service-item p {
   font-size: 0.9rem;
-  color: #666;
+  color: #000000;     /*Letra de los botones externa*/
   margin-top: 10px;
 }
 
@@ -418,18 +425,18 @@ nav ul li a {
 .testimonios_section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #e7d9f7; /* Color lila suave */
+    background-color: rgba(13, 107, 154, 0.271); /* Color fondo contenedor */
 }
 
 .testimonios_section h2 {
     font-size: 24px;        /*Tamaño subtitulo Testimonials*/
-    color: #6e57e0;       /* Color púrpura titulo de What people say about us*/
+    color: #000000;       /* Color titulo Testimnonios*/
     margin-bottom: 10px;
 }
 
 .testimonios_section h3 {
     font-size: 32px;       /*Tamaño subtitulo What people say about us*/
-    color: #000000;     /*Color subtitulo What people say about us*/
+    color: #272222e2;     /*Color subtitulo What people say about us*/
     margin-bottom: 50px;
 }
 
@@ -441,11 +448,11 @@ nav ul li a {
 }
 
 .testimonial {
-    background-color: white;
+    background-color: rgb(255, 255, 255);      /*color interno de los testimonios*/
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 450px;
     text-align: center;
 }
 
@@ -494,27 +501,26 @@ footer {
 }
 
 .follow-button {
-    background-color: #9d00ff;
+    background-color: #7006b253;
     border: none;
     padding: 10px 20px;
-    color: #ffffff;     /*Color interno del texto FOLLOW*/
+    color: #000000;     /*Color interno del texto FOLLOW*/
     border-radius: 10px;
     cursor: pointer;
     margin-bottom: 20px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .instagram-images {
     display: flex;
     justify-content: center;
-    gap: 10px;
 }
 
 .instagram-images img {
     width: 200px;         /*Ancho del tamaño de la imagen*/
     height: 200px;        /*Alto del tamaño de la imagen*/
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .footer-info {
@@ -526,7 +532,7 @@ footer {
 
 .column h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    /*Espacio horizontal entre el boton y el texto*/
 }
 
 .column ul {
@@ -536,11 +542,11 @@ footer {
 
 .column ul li {
     margin-bottom: 5px;
-    color: #555;
+    color: #000000;     /*Color texto columna izquierda*/
 }
 
 .column p {
-    color: #555;
+    color: #000000;     /*Color texto columna de la mitad y lado derecho*/
 }
 
 form {
@@ -551,24 +557,24 @@ form {
 
 form input {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #00000068;
+    border-radius: 18px;
     flex: 1;
 }
 
 form button {
-    background-color: #6c63ff;
-    color: #fff;
+    background-color: #00000041;
+    color: #000000;     /*Color interno de la flecha*/
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 .redes_sociales a {
     display: inline-block;
-    margin-right: 10px;
-    color: #555;
+    margin-right: 5px;    /*Largo solicitar email*/
+    color: #0000009f;
     text-decoration: none;
 }
 
