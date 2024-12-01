@@ -16,7 +16,7 @@ header {
   padding: 20px 10%;
   display: flex;
   justify-content: right;
-  box-shadow: 0 2px 5px rgb(77, 0, 70);
+  /*box-shadow: 0 2px 5px rgb(255, 0, 0); */
 }
 
 nav ul {
@@ -44,17 +44,19 @@ nav ul li a {             /*Lista Barra de navegacion S*/
   min-height: 70vh;
   padding: 20px;
 }
+.imagenes img{
+  position: absolute;
+  left: 420px;
+  top: 200px;
+}
 
 .contenido-principal {
   display: flex; 
-  background-color: #a487ae76;        /*Color del contenedor*/
   /*color: #ffffff;                     /**/
   align-items: center;
-  justify-content: left;
   width: max-content;
   padding: 1rem;
-
-  
+  justify-content: end;
 }
 
 /*-----------------------
@@ -221,8 +223,8 @@ nav ul li a {             /*Lista Barra de navegacion S*/
 
 .card-button {
   background: #ffffff;        /*color interno del boton*/
-  color: #0011ff;             /*Color letra del boton*/
-  border: 3px solid #0011ff;    /*color alrededor del boton trazo*/
+  color: #9f5cdf;             /*Color letra del boton*/
+  border: 3px solid #9f5cdf;    /*color alrededor del boton trazo*/
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
@@ -241,9 +243,9 @@ nav ul li a {             /*Lista Barra de navegacion S*/
 
 /* Estilos seccion principal */
 .apartado_about-us {
-  padding: 50px 20px;
+  
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: center;       /*titulo About*/
 }
 
 .about-header {
@@ -262,33 +264,44 @@ nav ul li a {             /*Lista Barra de navegacion S*/
 }
 
 /*---------Diseño----------*/
+
+.apartado_about-us {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+
 .about-contenido {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /*gap: 300px;*/
-  align-items: center;
-  justify-content:space-evenly;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0px;
+
 }
 
 .about-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 660px;   /*Tamaño de las imagenes*/
-  text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
 }
 
-.about-image {
-  display: flex;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.about-img {
+    flex: 1;
+}
+
+.about-item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .about-text {
-  padding: 0 20px;
+     flex: 1;
+    padding: 20px;
+    display: grid;    /* 1 */
 }
 
 .about-item-title {
@@ -307,11 +320,11 @@ nav ul li a {             /*Lista Barra de navegacion S*/
 ------------------------*/
 
 .featured-products {
-    background-color: #d1c1a6a4;      /*Color fondo del contenedor*/
+    background-color: #d1cea641;      /*Color fondo del contenedor*/
     padding: 50px 20px;
     text-align: center;
     font-size: 25px;                    /*Tamaño del titulo, y de los precios*/
-}
+} 
 
 .featured-products .container {
     max-width: 1200px;
@@ -398,12 +411,12 @@ nav ul li a {             /*Lista Barra de navegacion S*/
 }
 
 .service-item img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: #00aaff4a;
-  padding: 18px;      /*Define el tamaño interno del los logos*/
+  padding: 10px;      /*Define el tamaño interno del los logos*/
   box-shadow: 0 4px 6px rgb(0, 0, 0);   /*Color, y forma del Sombreado*/
-  border-radius: 80px;
+  border-radius: 60px;
 }
 
 .service-item h3 {
@@ -425,7 +438,7 @@ nav ul li a {             /*Lista Barra de navegacion S*/
 .testimonios_section {
     text-align: center;
     padding: 50px 20px;
-    background-color: rgba(13, 107, 154, 0.271); /* Color fondo contenedor */
+    background-color: rgba(166, 113, 216, 0.271); /* Color fondo contenedor */
 }
 
 .testimonios_section h2 {
@@ -552,7 +565,6 @@ footer {
 form {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
 form input {
@@ -563,7 +575,7 @@ form input {
 }
 
 form button {
-    background-color: #00000041;
+    background-color: #e1b5fa;
     color: #000000;     /*Color interno de la flecha*/
     border: none;
     padding: 20px;
